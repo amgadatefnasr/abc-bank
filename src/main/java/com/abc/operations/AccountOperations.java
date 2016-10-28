@@ -9,6 +9,7 @@ import com.abc.model.Transaction;
 public interface AccountOperations {
     public Account process(Account a, Transaction t);
     public double getTotalInterestPaid(Account a);
+    public boolean noWithdrawalsLastTenDays(Account a);
     public Account calculateInterest(Account a);
     public String getDetailedStatementReport(Account a);
 }

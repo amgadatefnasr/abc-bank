@@ -20,7 +20,7 @@ public class AbcBankBankOperationsImpl implements BankOperations {
         return bank;
     }
     public Bank updateCustomer(Bank bank, Customer customer, Customer updatedCustomer){
-        bank.getCustomerList().add(bank.getCustomerList().indexOf(customer), updatedCustomer);
+        bank.getCustomerList().set(bank.getCustomerList().indexOf(customer), updatedCustomer);
         return bank;
     }
     public String getCustomerSummary(Bank bank){
